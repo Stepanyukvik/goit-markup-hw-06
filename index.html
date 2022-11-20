@@ -385,7 +385,7 @@
             </div>
             <div class="mailing-list">
                 <p class="go">Підпишіться на розсилку</p>
-                <div class="footer-mailing">
+                <form name="footer-mailing" class="footer-mailing">
                     <label>
                         <input type="email"
                         name="footer-mail"
@@ -398,12 +398,9 @@
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
-
-        
-       
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -412,8 +409,9 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <p class="modal-tittle">Залиште свої дані, ми вам передзвонимо</p>
+            
             <form name="form-callback" class="modal-form">
+                <p class="modal-tittle">Залиште свої дані, ми вам передзвонимо</p>
                 <label for="user-name" class="modal-label">Ім'я</label>
                 <div class="input-wrapper">
                     <input 
@@ -459,7 +457,8 @@
                 <textarea 
                  name="user-comment"
                  id="user-comment"
-                 class="modal-input commentarea">Введіть текст</textarea>
+                 placeholder="Введіть текст"
+                 class="modal-input commentarea"></textarea>
 
                 <div class="input-wrapper check-line">
                     <input hidden
