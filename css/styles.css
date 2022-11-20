@@ -593,15 +593,14 @@ ul {
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 12px;
     padding-left: 42px;
+
+    transition: outline 250ms var(--timing-fuction);
 }
 
 .input-wrapper {
     position: relative;
     margin-bottom: 10px;
-    
-   
 }
-
 
 .input-icon {
     position: absolute;
@@ -625,8 +624,8 @@ ul {
 .modal-input:focus + .input-icon {
     fill: var(--accent-color);
 }
-.modal-input:checked {
-    border: 1px solid var(--accent-color);  
+.modal-input:focus {
+    outline: 1px solid var(--accent-color);  
 }
 
 .modal-input.commentarea::placeholder {
